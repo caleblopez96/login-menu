@@ -13,7 +13,6 @@ html {
     font-family: "Raleway", sans-serif;
     background-image: linear-gradient(to left bottom, #0e2a47, #1e3d5f, #2e5177, #3f6591, #4f7bab);
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .container {
@@ -21,7 +20,7 @@ html {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    /* height: 100vh;*/
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -58,20 +57,25 @@ p {
 
 input {
     border: 1px solid #f4f5fa;
-    color: #f4f5fa;
+    color: rgb(16, 16, 16);
     height: 1.6rem;
     padding: 1rem 0.7rem;
     border-radius: 5px;
     background: transparent;
+    font-weight: bold;
 }
 
 input:last-child {
     padding: 0;
 }
 
+input:focus {
+    border: none;
+}
+
 ::placeholder {
     font-weight: 500;
-    color: #f4f5fa;
+    color: rgb(16, 16, 16);
     opacity: 0.8;
 }
 
